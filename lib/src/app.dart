@@ -223,7 +223,7 @@ class App {
   @Route.post('/api/packages/versions/newUpload')
   Future<shelf.Response> upload(shelf.Request req) async {
     try {
-      var uploader = '';//await _getUploaderEmail(req);
+      var uploader = ''; //await _getUploaderEmail(req);
 
       var contentType = req.headers['content-type'];
       if (contentType == null) throw 'invalid content type';
